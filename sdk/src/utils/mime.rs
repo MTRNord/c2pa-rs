@@ -42,6 +42,8 @@ pub fn extension_to_mime(extension: &str) -> Option<&'static str> {
         "arw" => "image/x-sony-arw",
         "nef" => "image/x-nikon-nef",
         "c2pa" | "application/x-c2pa-manifest-store" | "application/c2pa" => "application/c2pa",
+        "cr2" => "image/x-canon-cr2",
+        "cr3" => "image/x-canon-cr3",
         _ => return None,
     })
 }
